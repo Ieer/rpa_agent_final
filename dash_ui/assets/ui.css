@@ -1,0 +1,140 @@
+:root {
+  --ui-space-1: 0.25rem;
+  --ui-space-2: 0.5rem;
+  --ui-space-3: 0.75rem;
+  --ui-space-4: 1rem;
+  --ui-space-6: 1.5rem;
+  --ui-radius: 0.65rem;
+  --ui-border: rgba(255, 255, 255, 0.08);
+  --ui-surface: rgba(255, 255, 255, 0.03);
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.app-shell-row {
+  min-height: 100vh;
+}
+
+.app-sidebar {
+  min-height: 100vh;
+  padding: var(--ui-space-4);
+  border-right: 1px solid var(--ui-border);
+  background: var(--ui-surface);
+}
+
+.sidebar-title {
+  letter-spacing: 0.02em;
+  font-weight: 650;
+}
+
+.sidebar-nav .nav-link {
+  border-radius: var(--ui-radius);
+  margin-bottom: var(--ui-space-2);
+}
+
+.app-content {
+  min-height: 100vh;
+}
+
+.page-content-wrap {
+  padding: var(--ui-space-2);
+}
+
+.page-shell {
+  max-width: 1280px;
+}
+
+.page-header {
+  margin-bottom: var(--ui-space-4);
+}
+
+.page-title {
+  margin-bottom: 0;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+}
+
+.section-title {
+  margin-bottom: var(--ui-space-3);
+  font-weight: 600;
+}
+
+.status-area .alert,
+.app-alert {
+  margin-bottom: 0;
+}
+
+.input-area-sm {
+  min-height: 96px;
+}
+
+.input-area-md {
+  min-height: 120px;
+}
+
+.input-area-lg {
+  min-height: 220px;
+}
+
+.panel-scroll {
+  min-height: 58vh;
+  max-height: 58vh;
+  overflow-y: auto;
+  padding-right: var(--ui-space-2);
+}
+
+.chat-messages .card {
+  border-radius: var(--ui-radius);
+}
+
+.log-view {
+  min-height: 70vh;
+  max-height: 70vh;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  padding: var(--ui-space-4);
+  border: 1px solid var(--ui-border);
+  border-radius: var(--ui-radius);
+  background: var(--ui-surface);
+}
+
+.compact-muted {
+  font-size: 0.84rem;
+  opacity: 0.9;
+}
+
+.action-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--ui-space-2);
+}
+
+.professional-table {
+  margin-bottom: var(--ui-space-4);
+}
+
+.professional-table th {
+  font-weight: 600;
+}
+
+.code-output {
+  min-height: 120px;
+  border: 1px solid var(--ui-border);
+  border-radius: var(--ui-radius);
+  padding: var(--ui-space-3);
+  background: var(--ui-surface);
+  white-space: pre-wrap;
+}
+
+.editor-area {
+  height: 70vh;
+  width: 100%;
+  font-family: Consolas, monospace;
+  border-radius: var(--ui-radius);
+  border: 1px solid var(--ui-border);
+  background: var(--ui-surface);
+  padding: var(--ui-space-3);
+}

@@ -1,0 +1,29 @@
+system:
+  mode: api
+  max_retry: 2
+  timeout: 60
+api:
+  host: 127.0.0.1
+  port: 8976
+  api_key: local_rpa_2026_prod
+rpa:
+  log_file: logs/rpa.log
+llm:
+  base_url: http://127.0.0.1:1234/v1
+  model: functiongemma-270m-it
+  provider: custom
+  api_key: lm-studio
+  headers: {}
+  model_routes: {}
+  max_tool_iterations: 20
+  memory_window: 50
+  temperature: 0.1
+chat:
+  default_session: dash:default
+  poll_interval_ms: 1200
+embedding:
+  enabled: false
+  base_url: http://127.0.0.1:1234/v1
+  model: text-embedding-qwen3-embedding-0.6b
+  api_key: lm-studio
+  headers: {}
